@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOI-gr-gAs">
+                                <rect key="frame" x="111" y="67" width="106" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.80311766419999997" blue="0.86153186309999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.80311766419999997" blue="0.86153186309999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="add a new item">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vli-TK-0YH" kind="presentation" id="AjP-wJ-Ik3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5a-Mx-ahb">
+                                <rect key="frame" x="111" y="151" width="98" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.80311766419999997" blue="0.86153186309999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.80311766419999997" blue="0.86153186309999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="see my Closet">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="93b-aO-F9Z" kind="presentation" id="Hu7-UT-4Io"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkD-ih-wn8">
+                                <rect key="frame" x="127" y="330" width="67" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.80311766419999997" blue="0.86153186309999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.80311766419999997" blue="0.86153186309999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="And more">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GT-56-gcv">
+                                <rect key="frame" x="135" y="238" width="59" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.80311766419999997" blue="0.86153186309999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.80311766419999997" blue="0.86153186309999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Seasons">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cqf-T5-6S0" kind="presentation" id="toe-KL-L5S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="43"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Cnu-41-FAz">
+            <objects>
+                <viewController id="vli-TK-0YH" customClass="SecondViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tvb-4M-wkF"/>
+                        <viewControllerLayoutGuide type="bottom" id="A7j-9I-pqb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oR1-Ha-PKi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJx-j2-Tp4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="EFU-9Y-o7c">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="uX4-Ss-f3Y">
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="presentation" id="4Aj-j4-3gm"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" id="Qcb-Lp-lkC">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kRJ-WZ-yvv" customClass="ACPButton">
+                                <rect key="frame" x="28" y="50" width="114" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58234129271911517" green="1" blue="0.85947477361631219" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="写真を選択">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickBtn:" destination="vli-TK-0YH" eventType="touchUpInside" id="sVU-hM-hVY"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="pickBtn" destination="kRJ-WZ-yvv" id="1jT-vA-lJT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k7G-LA-0dc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="-622"/>
+        </scene>
+        <!--Forth View Controller-->
+        <scene sceneID="9aQ-Z0-W6h">
+            <objects>
+                <viewController id="cqf-T5-6S0" customClass="ForthViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PJo-XY-sIT"/>
+                        <viewControllerLayoutGuide type="bottom" id="3YO-rf-vh1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hlA-FS-v9o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rXn-j1-3lD">
+                                <rect key="frame" x="-13" y="76" width="347" height="392"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Four seasons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aa9-jc-W29">
+                                <rect key="frame" x="108" y="45" width="104" height="21"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSu-qv-1Ay">
+                                <rect key="frame" x="-20" y="432" width="360" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihO-Kf-q6X">
+                                <rect key="frame" x="213" y="89" width="58" height="30"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Summer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzJ-xs-2ce">
+                                <rect key="frame" x="49" y="433" width="54" height="30"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Autumn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzg-AK-jbR">
+                                <rect key="frame" x="220" y="433" width="45" height="30"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Winter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcn-y1-HxP">
+                                <rect key="frame" x="54" y="89" width="45" height="30"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Spring">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uks-85-Efe">
+                                <rect key="frame" x="0.0" y="1" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="2Oh-8e-Fcj">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="q2f-92-UiG">
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="presentation" id="qmK-sE-rXB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z09-h9-zG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="879"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="9Ru-3S-tWC">
+            <objects>
+                <viewController id="93b-aO-F9Z" customClass="ThirdViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ozG-Dr-fd3"/>
+                        <viewControllerLayoutGuide type="bottom" id="SO4-ds-vRd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fty-EL-GtH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="img7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="I9J-xf-i0W">
+                                <rect key="frame" x="-37" y="80" width="376" height="376"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vc3-gw-ST4">
+                                <rect key="frame" x="109" y="200" width="45" height="30"/>
+                                <state key="normal" title="シャツ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qY9-iU-FSZ" kind="presentation" id="fAu-bM-3wU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHb-Ll-q9q">
+                                <rect key="frame" x="112" y="136" width="30" height="30"/>
+                                <state key="normal" title="上着">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8h5-sa-mQ0" kind="presentation" id="bJ4-pd-aF7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhv-ws-Rw5">
+                                <rect key="frame" x="109" y="252" width="45" height="50"/>
+                                <state key="normal" title="パンツ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Msg-K1-RBZ" kind="presentation" id="MJk-NW-4OJ"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h4Y-QJ-of1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="rdC-2D-SqL">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="sDe-40-3CH">
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="presentation" id="sam-RP-BfF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cK-L4-Dcd">
+                                <rect key="frame" x="101" y="328" width="60" height="28"/>
+                                <state key="normal" title="スカート">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="twg-Xv-TJX" kind="presentation" id="471-Fr-g19"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vua-iQ-39g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="43"/>
+        </scene>
+        <!--Outer View Controller-->
+        <scene sceneID="OBi-MM-jXr">
+            <objects>
+                <viewController id="8h5-sa-mQ0" customClass="OuterViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dyx-84-iZy"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ev-Lo-XBg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="79g-XK-oQn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOh-sz-Tkz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Outer" id="Yta-h6-avG"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OhO-7l-0PM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1669" y="-754"/>
+        </scene>
+        <!--Shirts View Controller-->
+        <scene sceneID="sWr-ld-tZD">
+            <objects>
+                <viewController id="qY9-iU-FSZ" customClass="ShirtsViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4eo-HK-nDz"/>
+                        <viewControllerLayoutGuide type="bottom" id="utV-Gu-rEz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yd2-MH-rrF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WMl-fV-Gxu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Shirts" id="Djg-RG-AMl"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61S-lk-gQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931" y="43"/>
+        </scene>
+        <!--Skirts View Controller-->
+        <scene sceneID="a03-r5-aKU">
+            <objects>
+                <viewController id="twg-Xv-TJX" customClass="SkirtsViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YOb-9S-EIa"/>
+                        <viewControllerLayoutGuide type="bottom" id="YRN-w5-TtW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D6D-9r-Mr0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qoT-Tg-oww">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Skirt" id="9BI-lU-VZa"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lmH-Pa-Tnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1145" y="879"/>
+        </scene>
+        <!--Pants View Controller-->
+        <scene sceneID="yEY-0s-aMr">
+            <objects>
+                <viewController id="Msg-K1-RBZ" customClass="PantsViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aqA-OH-1o3"/>
+                        <viewControllerLayoutGuide type="bottom" id="OGX-c1-1s0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="skc-21-Wyf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RKd-e0-hMk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Pants" id="H2h-rU-giG"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUl-tx-82c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1691" y="879"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images.jpg" width="225" height="225"/>
+        <image name="img7.jpg" width="500" height="500"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sam-RP-BfF"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D828004C-E5AF-44FC-B440-377A5EFE5573</string>
+	<key>IDESourceControlProjectName</key>
+	<string>co-dinate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9C63B30890AFA95C88C1FEA10DFB007BCC7567BA</key>
+		<string>https://github.com/karinyasuda/Codinateapp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>co-dinate.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9C63B30890AFA95C88C1FEA10DFB007BCC7567BA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/karinyasuda/Codinateapp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9C63B30890AFA95C88C1FEA10DFB007BCC7567BA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9C63B30890AFA95C88C1FEA10DFB007BCC7567BA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>co-dinate</string>
+		</dict>
+	</array>
+</dict>
+</plist>
