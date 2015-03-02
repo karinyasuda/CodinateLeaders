@@ -219,27 +219,18 @@
                                 <state key="normal" title="シャツ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="qY9-iU-FSZ" kind="presentation" id="fAu-bM-3wU"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHb-Ll-q9q">
                                 <rect key="frame" x="112" y="136" width="30" height="30"/>
                                 <state key="normal" title="上着">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="8h5-sa-mQ0" kind="presentation" id="bJ4-pd-aF7"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhv-ws-Rw5">
                                 <rect key="frame" x="109" y="252" width="45" height="50"/>
                                 <state key="normal" title="パンツ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Msg-K1-RBZ" kind="presentation" id="MJk-NW-4OJ"/>
-                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h4Y-QJ-of1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -258,9 +249,6 @@
                                 <state key="normal" title="スカート">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="twg-Xv-TJX" kind="presentation" id="471-Fr-g19"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -271,119 +259,12 @@
             </objects>
             <point key="canvasLocation" x="909" y="43"/>
         </scene>
-        <!--Outer View Controller-->
-        <scene sceneID="OBi-MM-jXr">
-            <objects>
-                <viewController id="8h5-sa-mQ0" customClass="OuterViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dyx-84-iZy"/>
-                        <viewControllerLayoutGuide type="bottom" id="6ev-Lo-XBg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="79g-XK-oQn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOh-sz-Tkz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Outer" id="Yta-h6-avG"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OhO-7l-0PM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1669" y="-754"/>
-        </scene>
-        <!--Shirts View Controller-->
-        <scene sceneID="sWr-ld-tZD">
-            <objects>
-                <viewController id="qY9-iU-FSZ" customClass="ShirtsViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4eo-HK-nDz"/>
-                        <viewControllerLayoutGuide type="bottom" id="utV-Gu-rEz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Yd2-MH-rrF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WMl-fV-Gxu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Shirts" id="Djg-RG-AMl"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="61S-lk-gQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1931" y="43"/>
-        </scene>
-        <!--Skirts View Controller-->
-        <scene sceneID="a03-r5-aKU">
-            <objects>
-                <viewController id="twg-Xv-TJX" customClass="SkirtsViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YOb-9S-EIa"/>
-                        <viewControllerLayoutGuide type="bottom" id="YRN-w5-TtW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="D6D-9r-Mr0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qoT-Tg-oww">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Skirt" id="9BI-lU-VZa"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lmH-Pa-Tnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1145" y="879"/>
-        </scene>
-        <!--Pants View Controller-->
-        <scene sceneID="yEY-0s-aMr">
-            <objects>
-                <viewController id="Msg-K1-RBZ" customClass="PantsViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aqA-OH-1o3"/>
-                        <viewControllerLayoutGuide type="bottom" id="OGX-c1-1s0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="skc-21-Wyf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RKd-e0-hMk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Pants" id="H2h-rU-giG"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gUl-tx-82c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1691" y="879"/>
-        </scene>
     </scenes>
     <resources>
         <image name="images.jpg" width="225" height="225"/>
         <image name="img7.jpg" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sam-RP-BfF"/>
+        <segue reference="4Aj-j4-3gm"/>
     </inferredMetricsTieBreakers>
 </document>
