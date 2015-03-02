@@ -22,8 +22,8 @@
 		9AC8CD841AA0334E00CACBE2 /* img6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC8CD831AA0334E00CACBE2 /* img6.jpg */; };
 		9AC8CD861AA033C800CACBE2 /* img7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC8CD851AA033C800CACBE2 /* img7.jpg */; };
 		9ACF47261AA40EB800F7BC66 /* img7-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF47251AA40EB800F7BC66 /* img7-2.jpg */; };
-		9ACF47281AA40F5D00F7BC66 /* img7-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF47271AA40F5D00F7BC66 /* img7-3.jpg */; };
-		9ACF472A1AA4107500F7BC66 /* img7-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF47291AA4107500F7BC66 /* img7-5.jpg */; };
+		9ACF472C1AA4BD9100F7BC66 /* tansu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF472B1AA4BD9100F7BC66 /* tansu.jpg */; };
+		9ACF472E1AA4C13100F7BC66 /* mywardrobe5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF472D1AA4C13100F7BC66 /* mywardrobe5.jpg */; };
 		9ADBA51A1AA3125B003E8B70 /* Main_leaders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBA5191AA3125B003E8B70 /* Main_leaders.storyboard */; };
 		9ADBA51C1AA3161B003E8B70 /* OuterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBA51B1AA3161B003E8B70 /* OuterViewController.swift */; };
 		9ADBA51E1AA31631003E8B70 /* ShirtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBA51D1AA31631003E8B70 /* ShirtsViewController.swift */; };
@@ -69,8 +69,8 @@
 		9AC8CD831AA0334E00CACBE2 /* img6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img6.jpg; sourceTree = "<group>"; };
 		9AC8CD851AA033C800CACBE2 /* img7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img7.jpg; sourceTree = "<group>"; };
 		9ACF47251AA40EB800F7BC66 /* img7-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img7-2.jpg"; sourceTree = "<group>"; };
-		9ACF47271AA40F5D00F7BC66 /* img7-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img7-3.jpg"; sourceTree = "<group>"; };
-		9ACF47291AA4107500F7BC66 /* img7-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img7-5.jpg"; sourceTree = "<group>"; };
+		9ACF472B1AA4BD9100F7BC66 /* tansu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tansu.jpg; sourceTree = "<group>"; };
+		9ACF472D1AA4C13100F7BC66 /* mywardrobe5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mywardrobe5.jpg; sourceTree = "<group>"; };
 		9ADBA5191AA3125B003E8B70 /* Main_leaders.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_leaders.storyboard; sourceTree = "<group>"; };
 		9ADBA51B1AA3161B003E8B70 /* OuterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OuterViewController.swift; sourceTree = "<group>"; };
 		9ADBA51D1AA31631003E8B70 /* ShirtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShirtsViewController.swift; sourceTree = "<group>"; };
@@ -125,8 +125,8 @@
 		9AC8CD541A9C8F9200CACBE2 /* co-dinate */ = {
 			isa = PBXGroup;
 			children = (
-				9ACF47291AA4107500F7BC66 /* img7-5.jpg */,
-				9ACF47271AA40F5D00F7BC66 /* img7-3.jpg */,
+				9ACF472D1AA4C13100F7BC66 /* mywardrobe5.jpg */,
+				9ACF472B1AA4BD9100F7BC66 /* tansu.jpg */,
 				9ACF47251AA40EB800F7BC66 /* img7-2.jpg */,
 				9ADBA53E1AA40108003E8B70 /* haikei.jpg */,
 				9ADBA53C1AA3FB09003E8B70 /* MyWardrobe3.jpg */,
@@ -267,15 +267,15 @@
 				9ADBA5331AA32D71003E8B70 /* addnew.png in Resources */,
 				9ADBA5411AA40716003E8B70 /* MyWardrobe4.jpg in Resources */,
 				9ADBA51A1AA3125B003E8B70 /* Main_leaders.storyboard in Resources */,
+				9ACF472E1AA4C13100F7BC66 /* mywardrobe5.jpg in Resources */,
 				9AC8CD5D1A9C8F9200CACBE2 /* Main.storyboard in Resources */,
 				9AC8CD861AA033C800CACBE2 /* img7.jpg in Resources */,
 				9ADBA53F1AA40108003E8B70 /* haikei.jpg in Resources */,
 				9A559EB91AA145F6003A38A9 /* images.jpg in Resources */,
 				9ADBA5371AA37715003E8B70 /* Craft2.jpg in Resources */,
-				9ACF47281AA40F5D00F7BC66 /* img7-3.jpg in Resources */,
 				9ACF47261AA40EB800F7BC66 /* img7-2.jpg in Resources */,
 				9ADBA5241AA32897003E8B70 /* imgcloset.png in Resources */,
-				9ACF472A1AA4107500F7BC66 /* img7-5.jpg in Resources */,
+				9ACF472C1AA4BD9100F7BC66 /* tansu.jpg in Resources */,
 				9ADBA5261AA32999003E8B70 /* imgcloset2.jpeg in Resources */,
 				9AC8CD621A9C8F9300CACBE2 /* LaunchScreen.xib in Resources */,
 				9ADBA5311AA32CA7003E8B70 /* plus.jpg in Resources */,
