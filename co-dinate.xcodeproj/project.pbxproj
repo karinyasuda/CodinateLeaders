@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9A14BD851AA5C45C00C47618 /* waku8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BD841AA5C45C00C47618 /* waku8.jpg */; };
+		9A14BD871AA5E09000C47618 /* seasons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BD861AA5E09000C47618 /* seasons.jpg */; };
 		9A559E561AA08164003A38A9 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A559E551AA08164003A38A9 /* ThirdViewController.swift */; };
 		9A559EB41AA145AD003A38A9 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A559EB31AA145AD003A38A9 /* ForthViewController.swift */; };
 		9A559EB81AA145F6003A38A9 /* images-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A559EB51AA145F6003A38A9 /* images-1.jpg */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		9A14BD841AA5C45C00C47618 /* waku8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = waku8.jpg; path = ../waku8.jpg; sourceTree = "<group>"; };
+		9A14BD861AA5E09000C47618 /* seasons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seasons.jpg; sourceTree = "<group>"; };
 		9A559E551AA08164003A38A9 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		9A559EB31AA145AD003A38A9 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForthViewController.swift; path = ../ForthViewController.swift; sourceTree = "<group>"; };
 		9A559EB51AA145F6003A38A9 /* images-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-1.jpg"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				9A14BD841AA5C45C00C47618 /* waku8.jpg */,
+				9A14BD861AA5E09000C47618 /* seasons.jpg */,
 				9ACF473F1AA5831900F7BC66 /* room3.jpg */,
 				9ACF47351AA4D97100F7BC66 /* hane.jpg */,
 				9ACF47251AA40EB800F7BC66 /* img7-2.jpg */,
@@ -279,6 +282,7 @@
 				9ACF47401AA5831900F7BC66 /* room3.jpg in Resources */,
 				9ADBA5241AA32897003E8B70 /* imgcloset.png in Resources */,
 				9ADBA5261AA32999003E8B70 /* imgcloset2.jpeg in Resources */,
+				9A14BD871AA5E09000C47618 /* seasons.jpg in Resources */,
 				9AC8CD621A9C8F9300CACBE2 /* LaunchScreen.xib in Resources */,
 				9ADBA5311AA32CA7003E8B70 /* plus.jpg in Resources */,
 				9A559EBA1AA145F6003A38A9 /* images-2.jpg in Resources */,
