@@ -143,11 +143,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seasons.jpg" id="rXn-j1-3lD">
-                                <rect key="frame" x="-13" y="0.0" width="347" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </imageView>
                             <navigationBar contentMode="scaleToFill" id="Fu2-6e-bCi">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -161,6 +156,11 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="season3.jpg" id="rXn-j1-3lD">
+                                <rect key="frame" x="-13" y="0.0" width="347" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -251,7 +251,7 @@
         <image name="images-2.jpg" width="225" height="225"/>
         <image name="imgcloset2.jpeg" width="296" height="271"/>
         <image name="room3.jpg" width="320" height="568"/>
-        <image name="seasons.jpg" width="320" height="568"/>
+        <image name="season3.jpg" width="320" height="568"/>
         <image name="waku8.jpg" width="320" height="568"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

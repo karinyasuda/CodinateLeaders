@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9A14BD851AA5C45C00C47618 /* waku8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BD841AA5C45C00C47618 /* waku8.jpg */; };
 		9A14BD871AA5E09000C47618 /* seasons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BD861AA5E09000C47618 /* seasons.jpg */; };
+		9A14BD891AA600F400C47618 /* seasons2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BD881AA600F400C47618 /* seasons2.jpg */; };
+		9A14BD8B1AA6031100C47618 /* season3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BD8A1AA6031100C47618 /* season3.jpg */; };
 		9A559E561AA08164003A38A9 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A559E551AA08164003A38A9 /* ThirdViewController.swift */; };
 		9A559EB41AA145AD003A38A9 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A559EB31AA145AD003A38A9 /* ForthViewController.swift */; };
 		9A559EB81AA145F6003A38A9 /* images-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A559EB51AA145F6003A38A9 /* images-1.jpg */; };
@@ -54,6 +56,8 @@
 /* Begin PBXFileReference section */
 		9A14BD841AA5C45C00C47618 /* waku8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = waku8.jpg; path = ../waku8.jpg; sourceTree = "<group>"; };
 		9A14BD861AA5E09000C47618 /* seasons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seasons.jpg; sourceTree = "<group>"; };
+		9A14BD881AA600F400C47618 /* seasons2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seasons2.jpg; sourceTree = "<group>"; };
+		9A14BD8A1AA6031100C47618 /* season3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = season3.jpg; sourceTree = "<group>"; };
 		9A559E551AA08164003A38A9 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		9A559EB31AA145AD003A38A9 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForthViewController.swift; path = ../ForthViewController.swift; sourceTree = "<group>"; };
 		9A559EB51AA145F6003A38A9 /* images-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-1.jpg"; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 		9AC8CD541A9C8F9200CACBE2 /* co-dinate */ = {
 			isa = PBXGroup;
 			children = (
+				9A14BD8A1AA6031100C47618 /* season3.jpg */,
+				9A14BD881AA600F400C47618 /* seasons2.jpg */,
 				9A14BD841AA5C45C00C47618 /* waku8.jpg */,
 				9A14BD861AA5E09000C47618 /* seasons.jpg */,
 				9ACF473F1AA5831900F7BC66 /* room3.jpg */,
@@ -270,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A14BD891AA600F400C47618 /* seasons2.jpg in Resources */,
 				9ADBA5331AA32D71003E8B70 /* addnew.png in Resources */,
 				9ADBA5411AA40716003E8B70 /* MyWardrobe4.jpg in Resources */,
 				9ADBA51A1AA3125B003E8B70 /* Main_leaders.storyboard in Resources */,
@@ -283,6 +290,7 @@
 				9ADBA5241AA32897003E8B70 /* imgcloset.png in Resources */,
 				9ADBA5261AA32999003E8B70 /* imgcloset2.jpeg in Resources */,
 				9A14BD871AA5E09000C47618 /* seasons.jpg in Resources */,
+				9A14BD8B1AA6031100C47618 /* season3.jpg in Resources */,
 				9AC8CD621A9C8F9300CACBE2 /* LaunchScreen.xib in Resources */,
 				9ADBA5311AA32CA7003E8B70 /* plus.jpg in Resources */,
 				9A559EBA1AA145F6003A38A9 /* images-2.jpg in Resources */,
