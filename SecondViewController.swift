@@ -10,7 +10,7 @@ import UIKit
 
 class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,UINavigationControllerDelegate{
 
-    var ImageView = UIImageView(frame:CGRectMake(35, 100, 250, 250))
+    var ImageView = UIImageView(frame:CGRectMake(60, 150, 200, 200))
     
     @IBOutlet var pickBtn:UIButton!
     
@@ -19,7 +19,7 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(ImageView)
-        self.ImageView.backgroundColor = UIColor.orangeColor()
+        self.ImageView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
 //        self.ImageView.backgroundColor = UIColor.ColorWithAlphaComponent(0.5)
         self.ImageView.layer.borderWidth = 1
     

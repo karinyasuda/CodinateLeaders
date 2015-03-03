@@ -45,7 +45,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.80311766419999997" blue="0.86153186309999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Closet">
+                                <state key="normal" title="Wadrobe">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -86,18 +86,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kRJ-WZ-yvv" customClass="ACPButton">
-                                <rect key="frame" x="28" y="50" width="114" height="28"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haikei.jpg" id="s8V-32-Svg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.58234129271911517" green="1" blue="0.85947477361631219" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="写真を選択">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pickBtn:" destination="vli-TK-0YH" eventType="touchUpInside" id="sVU-hM-hVY"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" red="1" green="0.37735352024588897" blue="0.51842855880185867" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sikaku2.jpg" id="MoN-eV-u5V">
+                                <rect key="frame" x="60" y="150" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.37735352024588897" blue="0.51842855880185867" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                             <navigationBar contentMode="scaleToFill" id="kcu-yg-uot">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -111,6 +109,26 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="MS5-XE-Z2S">
+                                <rect key="frame" x="40" y="381" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kRJ-WZ-yvv" customClass="ACPButton">
+                                <rect key="frame" x="16" y="94" width="114" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.7703034727253778" blue="0.83631969648854843" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="写真を選択">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickBtn:" destination="vli-TK-0YH" eventType="touchUpInside" id="sVU-hM-hVY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -121,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7G-LA-0dc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="341.86666666666667" y="-373.93333333333334"/>
+            <point key="canvasLocation" x="475" y="-396"/>
         </scene>
         <!--Forth View Controller-->
         <scene sceneID="9aQ-Z0-W6h">
@@ -215,7 +233,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mywardrobe5.jpg" id="EGQ-Xn-Qgl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="room3.jpg" id="EGQ-Xn-Qgl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -255,7 +273,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="BHS-Nn-RQz">
+                                    <navigationItem title="My Wardrobe" id="BHS-Nn-RQz">
                                         <barButtonItem key="leftBarButtonItem" title="back" id="Ll0-nW-8r2">
                                             <connections>
                                                 <segue destination="vXZ-lx-hvc" kind="modal" id="cd4-dW-zjy"/>
@@ -279,16 +297,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vua-iQ-39g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="438" y="124"/>
+            <point key="canvasLocation" x="644" y="132"/>
         </scene>
     </scenes>
     <resources>
         <image name="MyWardrobe3.jpg" width="320" height="568"/>
         <image name="addnew.png" width="100" height="99"/>
+        <image name="haikei.jpg" width="320" height="568"/>
         <image name="images-2.jpg" width="225" height="225"/>
         <image name="images.jpg" width="225" height="225"/>
         <image name="imgcloset2.jpeg" width="296" height="271"/>
-        <image name="mywardrobe5.jpg" width="320" height="568"/>
+        <image name="room3.jpg" width="320" height="568"/>
+        <image name="sikaku2.jpg" width="250" height="250"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

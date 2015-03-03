@@ -24,6 +24,15 @@
 		9ACF47261AA40EB800F7BC66 /* img7-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF47251AA40EB800F7BC66 /* img7-2.jpg */; };
 		9ACF472C1AA4BD9100F7BC66 /* tansu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF472B1AA4BD9100F7BC66 /* tansu.jpg */; };
 		9ACF472E1AA4C13100F7BC66 /* mywardrobe5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF472D1AA4C13100F7BC66 /* mywardrobe5.jpg */; };
+		9ACF47301AA4C69500F7BC66 /* sikaku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF472F1AA4C69500F7BC66 /* sikaku.jpg */; };
+		9ACF47321AA4D11500F7BC66 /* sikaku2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF47311AA4D11500F7BC66 /* sikaku2.jpg */; };
+		9ACF47341AA4D44100F7BC66 /* nandarou.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF47331AA4D44100F7BC66 /* nandarou.jpg */; };
+		9ACF47361AA4D97100F7BC66 /* hane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF47351AA4D97100F7BC66 /* hane.jpg */; };
+		9ACF47381AA4DB3C00F7BC66 /* yokuwakannai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF47371AA4DB3C00F7BC66 /* yokuwakannai.jpg */; };
+		9ACF473A1AA4DC8A00F7BC66 /* rainrain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF47391AA4DC8A00F7BC66 /* rainrain.jpg */; };
+		9ACF473C1AA57DC200F7BC66 /* wardroberoom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF473B1AA57DC200F7BC66 /* wardroberoom.jpg */; };
+		9ACF473E1AA5807C00F7BC66 /* room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF473D1AA5807C00F7BC66 /* room.jpg */; };
+		9ACF47401AA5831900F7BC66 /* room3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF473F1AA5831900F7BC66 /* room3.jpg */; };
 		9ADBA51A1AA3125B003E8B70 /* Main_leaders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBA5191AA3125B003E8B70 /* Main_leaders.storyboard */; };
 		9ADBA51C1AA3161B003E8B70 /* OuterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBA51B1AA3161B003E8B70 /* OuterViewController.swift */; };
 		9ADBA51E1AA31631003E8B70 /* ShirtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBA51D1AA31631003E8B70 /* ShirtsViewController.swift */; };
@@ -71,6 +80,15 @@
 		9ACF47251AA40EB800F7BC66 /* img7-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img7-2.jpg"; sourceTree = "<group>"; };
 		9ACF472B1AA4BD9100F7BC66 /* tansu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tansu.jpg; sourceTree = "<group>"; };
 		9ACF472D1AA4C13100F7BC66 /* mywardrobe5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mywardrobe5.jpg; sourceTree = "<group>"; };
+		9ACF472F1AA4C69500F7BC66 /* sikaku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sikaku.jpg; sourceTree = "<group>"; };
+		9ACF47311AA4D11500F7BC66 /* sikaku2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sikaku2.jpg; sourceTree = "<group>"; };
+		9ACF47331AA4D44100F7BC66 /* nandarou.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nandarou.jpg; sourceTree = "<group>"; };
+		9ACF47351AA4D97100F7BC66 /* hane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hane.jpg; sourceTree = "<group>"; };
+		9ACF47371AA4DB3C00F7BC66 /* yokuwakannai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yokuwakannai.jpg; sourceTree = "<group>"; };
+		9ACF47391AA4DC8A00F7BC66 /* rainrain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainrain.jpg; sourceTree = "<group>"; };
+		9ACF473B1AA57DC200F7BC66 /* wardroberoom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wardroberoom.jpg; sourceTree = "<group>"; };
+		9ACF473D1AA5807C00F7BC66 /* room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = room.jpg; sourceTree = "<group>"; };
+		9ACF473F1AA5831900F7BC66 /* room3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = room3.jpg; path = ../room3.jpg; sourceTree = "<group>"; };
 		9ADBA5191AA3125B003E8B70 /* Main_leaders.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_leaders.storyboard; sourceTree = "<group>"; };
 		9ADBA51B1AA3161B003E8B70 /* OuterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OuterViewController.swift; sourceTree = "<group>"; };
 		9ADBA51D1AA31631003E8B70 /* ShirtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShirtsViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +143,15 @@
 		9AC8CD541A9C8F9200CACBE2 /* co-dinate */ = {
 			isa = PBXGroup;
 			children = (
+				9ACF473D1AA5807C00F7BC66 /* room.jpg */,
+				9ACF473F1AA5831900F7BC66 /* room3.jpg */,
+				9ACF473B1AA57DC200F7BC66 /* wardroberoom.jpg */,
+				9ACF47391AA4DC8A00F7BC66 /* rainrain.jpg */,
+				9ACF47371AA4DB3C00F7BC66 /* yokuwakannai.jpg */,
+				9ACF47351AA4D97100F7BC66 /* hane.jpg */,
+				9ACF47331AA4D44100F7BC66 /* nandarou.jpg */,
+				9ACF47311AA4D11500F7BC66 /* sikaku2.jpg */,
+				9ACF472F1AA4C69500F7BC66 /* sikaku.jpg */,
 				9ACF472D1AA4C13100F7BC66 /* mywardrobe5.jpg */,
 				9ACF472B1AA4BD9100F7BC66 /* tansu.jpg */,
 				9ACF47251AA40EB800F7BC66 /* img7-2.jpg */,
@@ -270,18 +297,27 @@
 				9ACF472E1AA4C13100F7BC66 /* mywardrobe5.jpg in Resources */,
 				9AC8CD5D1A9C8F9200CACBE2 /* Main.storyboard in Resources */,
 				9AC8CD861AA033C800CACBE2 /* img7.jpg in Resources */,
+				9ACF47321AA4D11500F7BC66 /* sikaku2.jpg in Resources */,
 				9ADBA53F1AA40108003E8B70 /* haikei.jpg in Resources */,
 				9A559EB91AA145F6003A38A9 /* images.jpg in Resources */,
 				9ADBA5371AA37715003E8B70 /* Craft2.jpg in Resources */,
+				9ACF47381AA4DB3C00F7BC66 /* yokuwakannai.jpg in Resources */,
 				9ACF47261AA40EB800F7BC66 /* img7-2.jpg in Resources */,
+				9ACF47401AA5831900F7BC66 /* room3.jpg in Resources */,
 				9ADBA5241AA32897003E8B70 /* imgcloset.png in Resources */,
 				9ACF472C1AA4BD9100F7BC66 /* tansu.jpg in Resources */,
+				9ACF47301AA4C69500F7BC66 /* sikaku.jpg in Resources */,
 				9ADBA5261AA32999003E8B70 /* imgcloset2.jpeg in Resources */,
 				9AC8CD621A9C8F9300CACBE2 /* LaunchScreen.xib in Resources */,
+				9ACF47341AA4D44100F7BC66 /* nandarou.jpg in Resources */,
 				9ADBA5311AA32CA7003E8B70 /* plus.jpg in Resources */,
 				9A559EBA1AA145F6003A38A9 /* images-2.jpg in Resources */,
+				9ACF473E1AA5807C00F7BC66 /* room.jpg in Resources */,
+				9ACF47361AA4D97100F7BC66 /* hane.jpg in Resources */,
+				9ACF473C1AA57DC200F7BC66 /* wardroberoom.jpg in Resources */,
 				9A559EB81AA145F6003A38A9 /* images-1.jpg in Resources */,
 				9ADBA53D1AA3FB09003E8B70 /* MyWardrobe3.jpg in Resources */,
+				9ACF473A1AA4DC8A00F7BC66 /* rainrain.jpg in Resources */,
 				9AC8CD841AA0334E00CACBE2 /* img6.jpg in Resources */,
 				9AC8CD5F1A9C8F9300CACBE2 /* Images.xcassets in Resources */,
 			);
