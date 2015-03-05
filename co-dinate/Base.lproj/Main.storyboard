@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="6uS-8M-dnt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -201,10 +201,10 @@
             </objects>
             <point key="canvasLocation" x="409" y="382"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Third tables-->
         <scene sceneID="Onk-6X-Okb">
             <objects>
-                <viewController id="6uS-8M-dnt" customClass="ThirdViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Third" title="Third tables" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6uS-8M-dnt" customClass="ThirdViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sJN-Wf-Kgw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,8 +214,8 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="6uS-8M-dnt" id="XbK-RZ-NI6"/>
-                                    <outlet property="delegate" destination="6uS-8M-dnt" id="AVp-Gr-V9O"/>
+                                    <outlet property="dataSource" destination="6uS-8M-dnt" id="Sn9-s0-8Ku"/>
+                                    <outlet property="delegate" destination="6uS-8M-dnt" id="6lG-lh-QHm"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -304,6 +304,26 @@
             </objects>
             <point key="canvasLocation" x="442" y="-264"/>
         </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="pKN-5D-5qI">
+            <objects>
+                <viewController storyboardIdentifier="Photoview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="736-rc-Dtv" customClass="PhotoViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Images" id="lCY-lm-1Fe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="E2H-Iv-dDF">
+                                <rect key="frame" x="55" y="118" width="210" height="210"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaM-FV-GPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="-566"/>
+        </scene>
     </scenes>
     <resources>
         <image name="MyWardrobe3.jpg" width="320" height="568"/>
@@ -320,6 +340,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0Sk-ib-msT"/>
+        <segue reference="cd4-dW-zjy"/>
     </inferredMetricsTieBreakers>
 </document>
