@@ -12,7 +12,6 @@ import UIKit
 
 
 //今は、ここにエラー　thread 1 :signal SIGABRT が出てしまいます。
-//LaunchScreenが表示されたところで落ちてしまいます
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?

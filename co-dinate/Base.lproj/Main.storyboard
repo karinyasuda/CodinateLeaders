@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="6uS-8M-dnt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Mywardrobe-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" title="Mywardrobe" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="ViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -45,11 +45,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.80311766419999997" blue="0.86153186309999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Wadrobe">
+                                <state key="normal" title="Wardrobe">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="93b-aO-F9Z" kind="modal" id="Hu7-UT-4Io"/>
+                                    <segue destination="93b-aO-F9Z" kind="modal" id="vr9-v1-ThO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6GT-56-gcv">
@@ -83,7 +83,7 @@
         <!--Second View Controller-->
         <scene sceneID="Cnu-41-FAz">
             <objects>
-                <viewController id="vli-TK-0YH" customClass="SecondViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="New" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vli-TK-0YH" customClass="SecondViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oR1-Ha-PKi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +134,7 @@
         <!--Forth View Controller-->
         <scene sceneID="9aQ-Z0-W6h">
             <objects>
-                <viewController id="cqf-T5-6S0" customClass="ForthViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Seasons" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cqf-T5-6S0" customClass="ForthViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hlA-FS-v9o">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,38 +201,31 @@
             </objects>
             <point key="canvasLocation" x="409" y="382"/>
         </scene>
-        <!--Third tables-->
-        <scene sceneID="Onk-6X-Okb">
+        <!--View Controller-->
+        <scene sceneID="hjx-N7-Hdf">
             <objects>
-                <viewController storyboardIdentifier="Third" title="Third tables" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6uS-8M-dnt" customClass="ThirdViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sJN-Wf-Kgw">
+                <viewController storyboardIdentifier="table" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0by-PU-ZEw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W80-iU-Hi5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="M8o-Mz-7dY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1ZW-NN-eTy">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="6uS-8M-dnt" id="Sn9-s0-8Ku"/>
-                                    <outlet property="delegate" destination="6uS-8M-dnt" id="6lG-lh-QHm"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lCG-9J-Y8x"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jnu-ph-Vml" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gx4-hA-CpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846" y="419"/>
+            <point key="canvasLocation" x="810" y="208"/>
         </scene>
         <!--Fifth View Controller-->
         <scene sceneID="9Ru-3S-tWC">
             <objects>
-                <viewController id="93b-aO-F9Z" customClass="FifthViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mywardrobe" useStoryboardIdentifierAsRestorationIdentifier="YES" id="93b-aO-F9Z" customClass="FifthViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fty-EL-GtH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,30 +292,46 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="Button1" destination="6cK-L4-Dcd" id="Xmq-Fz-EyW"/>
+                        <outlet property="Button2" destination="Jhv-ws-Rw5" id="Qie-rA-WMH"/>
+                        <outlet property="Button3" destination="vc3-gw-ST4" id="r1g-de-ho0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vua-iQ-39g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="442" y="-264"/>
         </scene>
         <!--Photo View Controller-->
-        <scene sceneID="pKN-5D-5qI">
+        <scene sceneID="Zcf-Oc-oqa">
             <objects>
-                <viewController storyboardIdentifier="Photoview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="736-rc-Dtv" customClass="PhotoViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Images" id="lCY-lm-1Fe">
+                <viewController storyboardIdentifier="UIImage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J0N-WW-Gz5" customClass="PhotoViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="btF-Qx-taT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="E2H-Iv-dDF">
-                                <rect key="frame" x="55" y="118" width="210" height="210"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="fMg-FP-zUx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3fb-ID-PvN">
+                                <rect key="frame" x="40" y="67" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="img_view" destination="3fb-ID-PvN" id="aii-31-MPB"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yaM-FV-GPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pvj-6z-BQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="-566"/>
+            <point key="canvasLocation" x="812" y="-482"/>
         </scene>
     </scenes>
     <resources>
@@ -340,6 +349,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="cd4-dW-zjy"/>
+        <segue reference="cut-4E-aUt"/>
     </inferredMetricsTieBreakers>
 </document>
