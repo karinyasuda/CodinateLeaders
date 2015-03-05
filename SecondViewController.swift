@@ -28,6 +28,8 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
 //        self.ImageView.backgroundColor = UIColor.ColorWithAlphaComponent(0.5)
 //        self.ImageView.layer.borderWidth = 1
     
+        
+        
         pickBtn.layer.cornerRadius = 10
         self.view.addSubview(pickBtn)
         pickBtn.layer.borderWidth = 1
