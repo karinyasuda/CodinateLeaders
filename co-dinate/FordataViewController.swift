@@ -1,32 +1,31 @@
 //
-//  ForthViewController.swift
+//  fordataViewController.swift
 //  co-dinate
 //
-//  Created by Karin on 2015/02/28.
+//  Created by Karin on 2015/03/05.
 //  Copyright (c) 2015年 Karin. All rights reserved.
 //
 
 
-//seasonsとつながっています。
+//最初につくったtableviewにつながってましたが、今はつながっているtableviewはありません
 
 import UIKit
 
-class ForthViewController: UIViewController {
-    @IBOutlet var Buttonspring:UIButton!
-    @IBOutlet var Buttonsummer:UIButton!
-    @IBOutlet var Buttonautumn:UIButton!
-    @IBOutlet var Buttonwinter:UIButton!
+class Seasons : NSObject {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    var title : String = "seasons"
+    var duration : NSTimeInterval = 0.0
+    
+}
+extension Seasons {
+    
+    func durationString() -> String {
+        return NSString(format:"%i:%02i",Int(self.duration) / 60, Int(self.duration) % 60)
     }
+}
+    // Do any additional setup after loading the view.
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
     
 
     /*
@@ -38,5 +37,3 @@ class ForthViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}

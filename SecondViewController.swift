@@ -10,6 +10,11 @@ import UIKit
 
 class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,UINavigationControllerDelegate{
 
+    //写真をカメラロールから取ってくるだけのimageviwewです
+    //最初は、ここからデータ保存できたらいいなと思っていたのですが、今はいらないかも知れません。
+    //写真とテキストの連携が出来なければ、服の写真とテキストをひとつのimageにしてしまおうかなとも考えています。
+    //季節ごとに分けてviewcontroller、imageviewをつくって、それぞれのimageviewに表示させるだけだったらできるかなとも考えています
+    
     var ImageView = UIImageView(frame:CGRectMake(60, 150, 200, 200))
     
     @IBOutlet var pickBtn:UIButton!
