@@ -11,18 +11,35 @@
 
 import UIKit
 
-class Seasons : NSObject {
 
-    var title : String = "seasons"
-    var duration : NSTimeInterval = 0.0
+class FordataController: UIViewController {
+    //,UITableViewDataSource ,UITableViewDelegate{
     
-}
-extension Seasons {
     
-    func durationString() -> String {
-        return NSString(format:"%i:%02i",Int(self.duration) / 60, Int(self.duration) % 60)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        // Do any additional setup after loading the view.
     }
-}
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+//class Seasons : NSObject {
+//
+//    var title : String = "seasons"
+//    var duration : NSTimeInterval = 0.0
+//    
+//}
+//extension Seasons {
+//    
+//    func durationString() -> String {
+//        return NSString(format:"%i:%02i",Int(self.duration) / 60, Int(self.duration) % 60)
+//    }
+//}
     // Do any additional setup after loading the view.
 
         // Dispose of any resources that can be recreated.
@@ -37,3 +54,4 @@ extension Seasons {
         // Pass the selected object to the new view controller.
     }
     */
+}

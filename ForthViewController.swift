@@ -12,10 +12,10 @@
 import UIKit
 
 class ForthViewController: UIViewController {
-    @IBOutlet var Buttonspring:UIButton!
-    @IBOutlet var Buttonsummer:UIButton!
-    @IBOutlet var Buttonautumn:UIButton!
-    @IBOutlet var Buttonwinter:UIButton!
+    @IBOutlet var buttonspring:UIButton!
+    @IBOutlet var buttonsummer:UIButton!
+    @IBOutlet var buttonautumn:UIButton!
+    @IBOutlet var buttonwinter:UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()

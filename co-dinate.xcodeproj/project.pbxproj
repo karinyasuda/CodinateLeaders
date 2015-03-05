@@ -12,12 +12,10 @@
 		9A14BD931AA6898F00C47618 /* haikeihart2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BD921AA6898F00C47618 /* haikeihart2.jpg */; };
 		9A14BD951AA74E4100C47618 /* siki-haikei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BD941AA74E4100C47618 /* siki-haikei.jpg */; };
 		9A14BD9B1AA789D500C47618 /* images-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BD9A1AA789D500C47618 /* images-2.jpg */; };
-		9A14BD9D1AA81BA900C47618 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A14BD9C1AA81BA900C47618 /* PhotoViewController.swift */; };
 		9A14BDA31AA8201A00C47618 /* skirt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BD9F1AA8201A00C47618 /* skirt.jpg */; };
 		9A14BDA41AA8201A00C47618 /* skirt2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BDA01AA8201A00C47618 /* skirt2.jpg */; };
 		9A14BDA51AA8201A00C47618 /* skirt3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BDA11AA8201A00C47618 /* skirt3.jpg */; };
 		9A14BDA61AA8201A00C47618 /* skirt4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BDA21AA8201A00C47618 /* skirt4.jpg */; };
-		9A14BDA81AA830AF00C47618 /* FordataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A14BDA71AA830AF00C47618 /* FordataViewController.swift */; };
 		9A14BDAA1AA8310800C47618 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A14BDA91AA8310800C47618 /* ThirdViewController.swift */; };
 		9A14BDAC1AA8348000C47618 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A14BDAB1AA8348000C47618 /* FifthViewController.swift */; };
 		9A559EB41AA145AD003A38A9 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A559EB31AA145AD003A38A9 /* ForthViewController.swift */; };
@@ -53,12 +51,10 @@
 		9A14BD921AA6898F00C47618 /* haikeihart2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = haikeihart2.jpg; sourceTree = "<group>"; };
 		9A14BD941AA74E4100C47618 /* siki-haikei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "siki-haikei.jpg"; sourceTree = "<group>"; };
 		9A14BD9A1AA789D500C47618 /* images-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-2.jpg"; sourceTree = "<group>"; };
-		9A14BD9C1AA81BA900C47618 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		9A14BD9F1AA8201A00C47618 /* skirt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skirt.jpg; sourceTree = "<group>"; };
 		9A14BDA01AA8201A00C47618 /* skirt2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skirt2.jpg; sourceTree = "<group>"; };
 		9A14BDA11AA8201A00C47618 /* skirt3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skirt3.jpg; sourceTree = "<group>"; };
 		9A14BDA21AA8201A00C47618 /* skirt4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skirt4.jpg; sourceTree = "<group>"; };
-		9A14BDA71AA830AF00C47618 /* FordataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FordataViewController.swift; sourceTree = "<group>"; };
 		9A14BDA91AA8310800C47618 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		9A14BDAB1AA8348000C47618 /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		9A559EB31AA145AD003A38A9 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForthViewController.swift; path = ../ForthViewController.swift; sourceTree = "<group>"; };
@@ -146,8 +142,6 @@
 				9ADBA5251AA32999003E8B70 /* imgcloset2.jpeg */,
 				9ADBA5191AA3125B003E8B70 /* Main_leaders.storyboard */,
 				9AC8CD5B1A9C8F9200CACBE2 /* Main.storyboard */,
-				9A14BD9C1AA81BA900C47618 /* PhotoViewController.swift */,
-				9A14BDA71AA830AF00C47618 /* FordataViewController.swift */,
 				9AC8CD571A9C8F9200CACBE2 /* AppDelegate.swift */,
 				9AC8CD591A9C8F9200CACBE2 /* ViewController.swift */,
 				9A14BDA91AA8310800C47618 /* ThirdViewController.swift */,
@@ -304,10 +298,8 @@
 			files = (
 				9AC8CD801AA02AC100CACBE2 /* SecondViewController.swift in Sources */,
 				9AC8CD5A1A9C8F9200CACBE2 /* ViewController.swift in Sources */,
-				9A14BDA81AA830AF00C47618 /* FordataViewController.swift in Sources */,
 				9A14BDAA1AA8310800C47618 /* ThirdViewController.swift in Sources */,
 				9A14BDAC1AA8348000C47618 /* FifthViewController.swift in Sources */,
-				9A14BD9D1AA81BA900C47618 /* PhotoViewController.swift in Sources */,
 				9AC8CD581A9C8F9200CACBE2 /* AppDelegate.swift in Sources */,
 				9A559EB41AA145AD003A38A9 /* ForthViewController.swift in Sources */,
 			);

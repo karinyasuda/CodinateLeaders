@@ -73,7 +73,6 @@
                         <outlet property="Button1" destination="D5a-Mx-ahb" id="ivc-Wx-Slc"/>
                         <outlet property="Button2" destination="6GT-56-gcv" id="86H-o0-3QE"/>
                         <outlet property="Button3" destination="cOI-gr-gAs" id="yTM-md-Gaq"/>
-                        <outlet property="image" destination="702-lj-4io" id="7yw-HH-fKG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -129,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7G-LA-0dc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181" y="-598"/>
+            <point key="canvasLocation" x="477" y="-1098"/>
         </scene>
         <!--Forth View Controller-->
         <scene sceneID="9aQ-Z0-W6h">
@@ -199,28 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z09-h9-zG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="382"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hjx-N7-Hdf">
-            <objects>
-                <viewController storyboardIdentifier="table" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0by-PU-ZEw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="W80-iU-Hi5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1ZW-NN-eTy">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gx4-hA-CpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="810" y="208"/>
+            <point key="canvasLocation" x="477" y="602"/>
         </scene>
         <!--Fifth View Controller-->
         <scene sceneID="9Ru-3S-tWC">
@@ -292,46 +270,10 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="Button1" destination="6cK-L4-Dcd" id="Xmq-Fz-EyW"/>
-                        <outlet property="Button2" destination="Jhv-ws-Rw5" id="Qie-rA-WMH"/>
-                        <outlet property="Button3" destination="vc3-gw-ST4" id="r1g-de-ho0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vua-iQ-39g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="442" y="-264"/>
-        </scene>
-        <!--Photo View Controller-->
-        <scene sceneID="Zcf-Oc-oqa">
-            <objects>
-                <viewController storyboardIdentifier="UIImage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J0N-WW-Gz5" customClass="PhotoViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="btF-Qx-taT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="fMg-FP-zUx">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3fb-ID-PvN">
-                                <rect key="frame" x="40" y="67" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="img_view" destination="3fb-ID-PvN" id="aii-31-MPB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pvj-6z-BQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="812" y="-482"/>
+            <point key="canvasLocation" x="674" y="-280"/>
         </scene>
     </scenes>
     <resources>
@@ -349,6 +291,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="cut-4E-aUt"/>
+        <segue reference="cd4-dW-zjy"/>
     </inferredMetricsTieBreakers>
 </document>
