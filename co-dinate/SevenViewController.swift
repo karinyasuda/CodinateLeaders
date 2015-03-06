@@ -1,22 +1,15 @@
 //
-//  ForthViewController.swift
+//  SevenViewController.swift
 //  co-dinate
 //
-//  Created by Karin on 2015/02/28.
+//  Created by Karin on 2015/03/06.
 //  Copyright (c) 2015年 Karin. All rights reserved.
 //
 
-
-//seasonsとつながっています。
-
 import UIKit
 
-class ForthViewController: UIViewController {
-//    @IBOutlet var buttonspring:UIButton!
-//    @IBOutlet var buttonsummer:UIButton!
-//    @IBOutlet var buttonautumn:UIButton!
-//    @IBOutlet var buttonwinter:UIButton!
-//    
+class SevenViewController: UIViewController {
+    
     
 
     override func viewDidLoad() {
@@ -24,14 +17,15 @@ class ForthViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func goBack(sender: UIButton){
         self.dismissViewControllerAnimated(true, completion: nil)
-        
     }
     
 

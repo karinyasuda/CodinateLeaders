@@ -12,12 +12,17 @@ class ViewController: UIViewController {
     @IBOutlet var Button1:UIButton!
     @IBOutlet var Button2:UIButton!
     @IBOutlet var Button3:UIButton!
+
     
    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+        let btn:UIButton? = UIButton.buttonWithType(UIButtonType.Custom) as? UIButton;
+        btn!.frame = CGRectMake(100, 0, 100, 100);
+//        btn!.setImage(img, forState: UIControlState.Normal);
+        btn!.addTarget(self, action: "onClick:", forControlEvents: UIControlEvents.TouchUpInside);
         
         Button1.layer.cornerRadius = 10
         self.view.addSubview(Button1)
@@ -35,7 +40,40 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
+        
+        //RoudedRect
         // Dispose of any resources that can be recreated.
     }
-    //add commment 
+    
+////    @IBAction func wardrobe(){
+////        var nex : AnyObject! = Main.storyboard.
+////           FifthViewControllerWithIdentifier("Wardrobe")
+////        self.presentViewController(nex as UIViewController, animated: true, completion: nil)
+////        
+////    }
+//    @IBAction func showCoverVertical(sender: AnyObject){
+//        let FifthView = FifthViewController()
+//        modalView.modalTransitionStyle = UIModalTransitionStyle.Wardrobe
+//        self.presentViewController(modalView, animated: true, completion: nil)
+//    }
+//    @IBAction func showCoverVertical(sender: AnyObject){
+//        let modalView = ForthViewController()
+//        modalView.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+//        self.presentViewController(modalView, animated: true, completion: nil)
+//    }
+////    @IBAction func seasons(){
+////        var nex : AnyObject! = self.storyboard.
+////            SeasonsViewControllerWithIdentifier("Seasons")
+////        self.presentViewController(nex as UIViewController, animated: true, completion: nil)
+////        
+////    }
+//    
+//    @IBAction func anewitem(){
+//        var nex : AnyObject! = self.storyboard.
+//            NewViewControllerWithIdentifier("New")
+//        self.presentViewController(nex as UIViewController, animated: true, completion: nil)
+//        
+//    }
+    //add commment
 }

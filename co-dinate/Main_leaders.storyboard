@@ -90,30 +90,23 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems>
-                        <barButtonItem style="plain" id="Qcb-Lp-lkC">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kRJ-WZ-yvv" customClass="ACPButton">
-                                <rect key="frame" x="28" y="50" width="114" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.58234129271911517" green="1" blue="0.85947477361631219" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81f-Qf-OPA" customClass="ACPButton">
+                                <rect key="frame" x="103" y="270" width="114" height="28"/>
+                                <color key="backgroundColor" red="0.58234129270000001" green="1" blue="0.85947477360000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="写真を選択">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pickBtn:" destination="vli-TK-0YH" eventType="touchUpInside" id="sVU-hM-hVY"/>
+                                    <action selector="pickBtn:" destination="vli-TK-0YH" eventType="touchUpInside" id="luE-Er-mKF"/>
                                 </connections>
                             </button>
-                        </barButtonItem>
-                    </toolbarItems>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="pickBtn" destination="kRJ-WZ-yvv" id="1jT-vA-lJT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7G-LA-0dc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

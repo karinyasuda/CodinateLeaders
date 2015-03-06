@@ -12,6 +12,7 @@ import UIKit
 
 
 //今は、ここにエラー　thread 1 :signal SIGABRT が出てしまいます。
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?

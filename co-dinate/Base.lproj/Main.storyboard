@@ -12,10 +12,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyWardrobe3.jpg" id="ucD-Gy-fdt">
-                                <rect key="frame" x="0.0" y="-5" width="320" height="573"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-2.jpg" id="0Ds-gY-VB0">
                                 <rect key="frame" x="115" y="259" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -37,7 +33,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vli-TK-0YH" kind="modal" id="AjP-wJ-Ik3"/>
+                                    <segue destination="vli-TK-0YH" kind="modal" id="Nek-WI-tL8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D5a-Mx-ahb">
@@ -49,7 +45,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="93b-aO-F9Z" kind="modal" id="vr9-v1-ThO"/>
+                                    <segue destination="93b-aO-F9Z" kind="modal" id="YuR-AW-zaD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6GT-56-gcv">
@@ -61,23 +57,27 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cqf-T5-6S0" kind="modal" id="toe-KL-L5S"/>
+                                    <segue destination="cqf-T5-6S0" kind="modal" id="oay-Hy-Too"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyWardrobe3.jpg" id="ucD-Gy-fdt">
+                                <rect key="frame" x="0.0" y="-3" width="320" height="573"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="Button1" destination="D5a-Mx-ahb" id="ivc-Wx-Slc"/>
-                        <outlet property="Button2" destination="6GT-56-gcv" id="86H-o0-3QE"/>
-                        <outlet property="Button3" destination="cOI-gr-gAs" id="yTM-md-Gaq"/>
+                        <outlet property="Button1" destination="D5a-Mx-ahb" id="7JK-rg-ycl"/>
+                        <outlet property="Button2" destination="6GT-56-gcv" id="l02-Cr-fLC"/>
+                        <outlet property="Button3" destination="cOI-gr-gAs" id="sgv-RO-X5O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12" y="-120"/>
+            <point key="canvasLocation" x="-244" y="54"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Cnu-41-FAz">
@@ -99,9 +99,12 @@
                                     <navigationItem title="NEW!" id="yfp-aG-qsj">
                                         <barButtonItem key="leftBarButtonItem" title="back" id="icU-a6-3fC">
                                             <connections>
-                                                <segue destination="vXZ-lx-hvc" kind="modal" id="0Sk-ib-msT"/>
+                                                <action selector="goBack:" destination="vli-TK-0YH" id="bNr-4R-WbZ"/>
                                             </connections>
                                         </barButtonItem>
+                                        <connections>
+                                            <outlet property="titleView" destination="kcu-yg-uot" id="wZt-f8-cMI"/>
+                                        </connections>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -120,6 +123,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="LUo-t7-J5Y"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -128,7 +134,350 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7G-LA-0dc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477" y="-1098"/>
+            <point key="canvasLocation" x="304" y="-644"/>
+        </scene>
+        <!--Sixth View Controller-->
+        <scene sceneID="eAE-fp-TLD">
+            <objects>
+                <viewController storyboardIdentifier="Image" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tVj-Nh-3bz" customClass="SixthViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Tv-OE-n7v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haikeihart2.jpg" id="YeC-jT-tqi">
+                                <rect key="frame" x="-1" y="0.0" width="321" height="581"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skirt3.jpg" id="LGr-CU-1XK">
+                                <rect key="frame" x="50" y="139" width="220" height="230"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="F8Z-C9-q1f">
+                                <rect key="frame" x="22" y="464" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttona:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="AGK-LZ-nl2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bc9-FJ-ZYl">
+                                <rect key="frame" x="104" y="464" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonb:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="Jb8-El-30b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5qW-Eo-gl8">
+                                <rect key="frame" x="187" y="464" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonc:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="btD-fm-WGj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DuW-h3-BbB">
+                                <rect key="frame" x="263" y="464" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttond:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="xjL-Fr-peZ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skirt2.jpg" id="3ed-wy-I7x">
+                                <rect key="frame" x="57" y="139" width="220" height="228"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="yHe-l7-8jc">
+                                <rect key="frame" x="0.0" y="-5" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="oQ0-FF-lbS">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="PBQ-EV-1zQ">
+                                            <connections>
+                                                <action selector="goBack:" destination="tVj-Nh-3bz" id="D6d-A2-0AX"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skirt.jpg" id="FOl-aO-AAd">
+                                <rect key="frame" x="61" y="139" width="198" height="230"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bG8-FR-Fqf">
+                                <rect key="frame" x="145" y="518" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="表示">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hyouji" destination="tVj-Nh-3bz" eventType="touchUpInside" id="nAi-Og-RFX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skirt4.jpg" id="yZJ-hr-DmC">
+                                <rect key="frame" x="50" y="139" width="220" height="230"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="skirtblue" destination="3ed-wy-I7x" id="iZw-qO-TYY"/>
+                        <outlet property="skirtcheck" destination="yZJ-hr-DmC" id="MGt-Sh-RpI"/>
+                        <outlet property="skirtgreen" destination="FOl-aO-AAd" id="HOk-Yr-OYQ"/>
+                        <outlet property="skirtred" destination="LGr-CU-1XK" id="zxY-Ar-QfM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6l-Lf-n1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1461" y="-770"/>
+        </scene>
+        <!--Eight View Controller-->
+        <scene sceneID="Bwq-cN-l3V">
+            <objects>
+                <viewController id="Zn6-xY-ZSg" customClass="EightViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7vu-na-roL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haikeihart.jpg" id="n9c-qu-j5G">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jacket2.jpg" id="aWX-aM-FgU">
+                                <rect key="frame" x="49" y="141" width="223" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jacket4.jpg" id="mas-it-FmM">
+                                <rect key="frame" x="49" y="141" width="223" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jacket3.jpg" id="hOD-Ji-d2R">
+                                <rect key="frame" x="49" y="141" width="223" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l8h-vv-ZYh">
+                                <rect key="frame" x="107" y="479" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonb:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="5Wt-vP-dno"/>
+                                    <action selector="buttonf:" destination="Zn6-xY-ZSg" eventType="touchUpInside" id="rxN-cn-ZXm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Px5-pM-baT">
+                                <rect key="frame" x="266" y="479" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttond:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="ipR-Ux-tJv"/>
+                                    <action selector="buttonh:" destination="Zn6-xY-ZSg" eventType="touchUpInside" id="zHS-Y8-7BZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EGE-5T-SKr">
+                                <rect key="frame" x="25" y="479" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttona:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="2CW-Uc-ka8"/>
+                                    <action selector="buttone:" destination="Zn6-xY-ZSg" eventType="touchUpInside" id="x8a-5S-Whj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6TD-1a-AhR">
+                                <rect key="frame" x="190" y="479" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonc:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="8Du-cS-4uv"/>
+                                    <action selector="buttong:" destination="Zn6-xY-ZSg" eventType="touchUpInside" id="LAz-HI-Qec"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pNS-kZ-4ae">
+                                <rect key="frame" x="145" y="518" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="表示">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hyouji" destination="Zn6-xY-ZSg" eventType="touchUpInside" id="Wqc-22-7gg"/>
+                                    <action selector="hyouji" destination="tVj-Nh-3bz" eventType="touchUpInside" id="v1E-hS-Csi"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" id="tCS-M6-iec">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="9yD-eZ-N40">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="Rtp-Oh-7Bm">
+                                            <connections>
+                                                <action selector="goBack:" destination="Zn6-xY-ZSg" id="lsh-0I-m1w"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jacket1.jpg" id="xr2-GD-OxH">
+                                <rect key="frame" x="49" y="141" width="223" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="jacketa" destination="xr2-GD-OxH" id="iF7-QK-bes"/>
+                        <outlet property="jacketb" destination="hOD-Ji-d2R" id="tu8-bg-dRT"/>
+                        <outlet property="jacketc" destination="mas-it-FmM" id="S2f-Ma-YpV"/>
+                        <outlet property="jacketd" destination="aWX-aM-FgU" id="xrF-Cx-Wp6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TyC-rP-t8W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="-778"/>
+        </scene>
+        <!--Ninth View Controller-->
+        <scene sceneID="xMI-HJ-znQ">
+            <objects>
+                <viewController id="yOO-bl-ET0" customClass="NinthViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6PC-vJ-ahC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haikeihart.jpg" id="Rqb-el-hQq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pants1.jpg" id="9pq-hk-LfF">
+                                <rect key="frame" x="49" y="137" width="223" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pants3.jpg" id="bRl-Wk-RJn">
+                                <rect key="frame" x="49" y="137" width="223" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pants4.jpg" id="lGh-XK-HAb">
+                                <rect key="frame" x="49" y="137" width="223" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oOe-fD-Bfn">
+                                <rect key="frame" x="107" y="481" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniOrnamentsITCTT" family="Bodoni Ornaments" pointSize="15"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonb:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="N4X-7D-D0C"/>
+                                    <action selector="buttonj:" destination="yOO-bl-ET0" eventType="touchUpInside" id="fHl-mZ-fLg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xcR-cb-jlx">
+                                <rect key="frame" x="266" y="481" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttond:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="Rao-mU-rEg"/>
+                                    <action selector="buttonl:" destination="yOO-bl-ET0" eventType="touchUpInside" id="xos-GP-GJj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ETJ-ce-TG2">
+                                <rect key="frame" x="25" y="481" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniOrnamentsITCTT" family="Bodoni Ornaments" pointSize="15"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttona:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="vE9-bG-wJn"/>
+                                    <action selector="buttoni:" destination="yOO-bl-ET0" eventType="touchUpInside" id="KGe-Db-2J4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RxR-Ux-6ny">
+                                <rect key="frame" x="190" y="481" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniOrnamentsITCTT" family="Bodoni Ornaments" pointSize="15"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonc:" destination="tVj-Nh-3bz" eventType="touchUpInside" id="goW-xI-mMP"/>
+                                    <action selector="buttonk:" destination="yOO-bl-ET0" eventType="touchUpInside" id="qX3-lv-o3e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ix7-b8-aGn">
+                                <rect key="frame" x="145" y="524" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="表示">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hyouji" destination="tVj-Nh-3bz" eventType="touchUpInside" id="Gfq-By-Yut"/>
+                                    <action selector="hyouji" destination="yOO-bl-ET0" eventType="touchUpInside" id="ful-6f-fdw"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" id="Yeb-kd-6Q6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="vIg-an-M17">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="2Z4-L8-Vhu">
+                                            <connections>
+                                                <action selector="goBack:" destination="yOO-bl-ET0" id="D0D-DA-76w"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pants2.jpg" id="nhw-TD-HvY">
+                                <rect key="frame" x="49" y="137" width="223" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="pantec" destination="9pq-hk-LfF" id="rYQ-LI-7mH"/>
+                        <outlet property="pantsa" destination="bRl-Wk-RJn" id="TUw-Sw-89R"/>
+                        <outlet property="pantsb" destination="lGh-XK-HAb" id="h19-3R-cR5"/>
+                        <outlet property="pantsd" destination="nhw-TD-HvY" id="ldi-Y4-giw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgH-dO-ywr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143" y="-77"/>
         </scene>
         <!--Forth View Controller-->
         <scene sceneID="9aQ-Z0-W6h">
@@ -138,24 +487,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" id="Fu2-6e-bCi">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Fous Seasons" id="Dyc-Q8-LE3">
-                                        <barButtonItem key="leftBarButtonItem" title="back" id="Kqs-TN-eVJ">
-                                            <connections>
-                                                <segue destination="vXZ-lx-hvc" kind="modal" id="cut-4E-aUt"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="siki-haikei.jpg" id="rXn-j1-3lD">
                                 <rect key="frame" x="-13" y="0.0" width="347" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1le-Ic-2ZJ">
+                                <rect key="frame" x="179" y="263" width="115" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N8y-yq-lw6">
                                 <rect key="frame" x="42" y="400" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -177,51 +520,43 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1le-Ic-2ZJ">
-                                <rect key="frame" x="179" y="263" width="115" height="115"/>
+                            <navigationBar contentMode="scaleToFill" id="Fu2-6e-bCi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                                <items>
+                                    <navigationItem title="Four Seasons" id="Dyc-Q8-LE3">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="Kqs-TN-eVJ">
+                                            <connections>
+                                                <action selector="goBack:" destination="cqf-T5-6S0" id="4Rx-j3-VJ5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <connections>
+                                            <outlet property="titleView" destination="Fu2-6e-bCi" id="wGL-uG-PIy"/>
+                                        </connections>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3bM-xf-EJx"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="Buttonautumn" destination="N8y-yq-lw6" id="6uK-lp-zc8"/>
-                        <outlet property="Buttonspring" destination="4q3-Xd-sI1" id="Bia-Mc-ZNH"/>
-                        <outlet property="Buttonsummer" destination="1le-Ic-2ZJ" id="1aJ-Kx-bZv"/>
-                        <outlet property="Buttonwinter" destination="cnP-KW-vy8" id="vVn-dn-C9A"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z09-h9-zG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477" y="602"/>
+            <point key="canvasLocation" x="433" y="616"/>
         </scene>
-        <!--Fifth View Controller-->
+        <!--Seven View Controller-->
         <scene sceneID="9Ru-3S-tWC">
             <objects>
-                <viewController storyboardIdentifier="mywardrobe" useStoryboardIdentifierAsRestorationIdentifier="YES" id="93b-aO-F9Z" customClass="FifthViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Wardrobe" useStoryboardIdentifierAsRestorationIdentifier="YES" id="93b-aO-F9Z" customClass="SevenViewController" customModule="co_dinate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fty-EL-GtH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="room3.jpg" id="EGQ-Xn-Qgl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6cK-L4-Dcd">
-                                <rect key="frame" x="100" y="216" width="72" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="スカート">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vc3-gw-ST4">
-                                <rect key="frame" x="96" y="338" width="72" height="44"/>
+                                <rect key="frame" x="100" y="401" width="72" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="シャツ">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -229,12 +564,15 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fHb-Ll-q9q">
-                                <rect key="frame" x="100" y="399" width="72" height="44"/>
+                                <rect key="frame" x="100" y="222" width="72" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Zn6-xY-ZSg" kind="modal" id="4AC-eQ-0CV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jhv-ws-Rw5">
                                 <rect key="frame" x="100" y="279" width="72" height="44"/>
@@ -243,6 +581,9 @@
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="yOO-bl-ET0" kind="modal" id="2pd-3f-fy1"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" id="LrO-mq-4Ax">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -251,46 +592,74 @@
                                     <navigationItem title="My Wardrobe" id="BHS-Nn-RQz">
                                         <barButtonItem key="leftBarButtonItem" title="back" id="Ll0-nW-8r2">
                                             <connections>
-                                                <segue destination="vXZ-lx-hvc" kind="modal" id="cd4-dW-zjy"/>
+                                                <action selector="goBack:" destination="93b-aO-F9Z" id="Hz8-n2-OeM"/>
                                             </connections>
                                         </barButtonItem>
+                                        <connections>
+                                            <outlet property="titleView" destination="LrO-mq-4Ax" id="ldi-aI-StK"/>
+                                        </connections>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Vl-Us-bzb">
-                                <rect key="frame" x="98" y="457" width="68" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GAZ-hg-728">
+                                <rect key="frame" x="100" y="453" width="72" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6cK-L4-Dcd">
+                                <rect key="frame" x="100" y="340" width="72" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="スカート">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tVj-Nh-3bz" kind="modal" id="kIk-Z5-oUG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="room3.jpg" id="EGQ-Xn-Qgl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yFi-ns-HCc"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vua-iQ-39g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="-280"/>
+            <point key="canvasLocation" x="681" y="-129"/>
         </scene>
     </scenes>
     <resources>
         <image name="MyWardrobe3.jpg" width="320" height="568"/>
         <image name="addnew.png" width="100" height="99"/>
+        <image name="haikeihart.jpg" width="320" height="568"/>
         <image name="haikeihart2.jpg" width="320" height="568"/>
         <image name="images-2.jpg" width="225" height="225"/>
         <image name="imgcloset2.jpeg" width="296" height="271"/>
+        <image name="jacket1.jpg" width="329" height="445"/>
+        <image name="jacket2.jpg" width="333" height="508"/>
+        <image name="jacket3.jpg" width="320" height="446"/>
+        <image name="jacket4.jpg" width="215" height="234"/>
+        <image name="pants1.jpg" width="225" height="225"/>
+        <image name="pants2.jpg" width="225" height="225"/>
+        <image name="pants3.jpg" width="225" height="225"/>
+        <image name="pants4.jpg" width="201" height="251"/>
         <image name="room3.jpg" width="320" height="568"/>
         <image name="siki-haikei.jpg" width="320" height="568"/>
+        <image name="skirt.jpg" width="211" height="239"/>
+        <image name="skirt2.jpg" width="253" height="199"/>
+        <image name="skirt3.jpg" width="225" height="225"/>
+        <image name="skirt4.jpg" width="224" height="224"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="cd4-dW-zjy"/>
-    </inferredMetricsTieBreakers>
 </document>

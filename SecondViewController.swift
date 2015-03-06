@@ -21,6 +21,7 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(ImageView)
@@ -55,8 +56,10 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
             photoPick.delegate = self
             photoPick.sourceType = .PhotoLibrary
             self.presentViewController(photoPick, animated: true, completion: nil)
-            
-        }
+    }
+        @IBAction func goBack(sender: UIButton){
+            self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]){
         ImageView.image = info[UIImagePickerControllerOriginalImage]as? UIImage
