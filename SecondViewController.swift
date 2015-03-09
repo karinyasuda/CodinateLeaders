@@ -16,9 +16,11 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     //季節ごとに分けてviewcontroller、imageviewをつくって、それぞれのimageviewに表示させるだけだったらできるかなとも考えています
     
     var ImageView = UIImageView(frame:CGRectMake(60, 150, 200, 200))
-    
+    //ボタンを設置
     @IBOutlet var pickBtn:UIButton!
     
+    //imageを取って来て
+    var images:UIImage! = UIImage(named:"my_image")
     
     
     
@@ -30,8 +32,10 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
 //        self.ImageView.layer.borderWidth = 1
     
         
-        
+        //ボタンの形を変える
+        //角丸に。◯にしたい時には、ボタンのサイズとcornerRadiusの値の二倍を同じにするといい
         pickBtn.layer.cornerRadius = 10
+             //↓もしかしたらこの一文いらないかも
         self.view.addSubview(pickBtn)
         pickBtn.layer.borderWidth = 1
     }
@@ -51,19 +55,32 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         // Pass the selected object to the new view controller.
     }
     */
+    //ボタンのアクションの中身
         @IBAction func pickBtn(sender: UIButton) {
+            //varで変数宣言　letだと定数宣言
             var photoPick = UIImagePickerController()
             photoPick.delegate = self
+            
             photoPick.sourceType = .PhotoLibrary
+            //photoPickのためにpresentViewController
             self.presentViewController(photoPick, animated: true, completion: nil)
+            
+            
     }
+    //バックボタン
         @IBAction func goBack(sender: UIButton){
             self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
+    //imageViewControllerのアクションを詳しく
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]){
         ImageView.image = info[UIImagePickerControllerOriginalImage]as? UIImage
+        
+        
         self.dismissViewControllerAnimated(true, completion: nil)
+        
+        var images:UIImage! = ImageView.image
+        //hogeDicとして画像とテキストデータをセットにする！
+        var hogeDic: Dictionary = ["name": images, "key2": "test"]
     }
 //    func imagePickerControllerDidCancel(picker: UIImagePickerController){
 //        println("canseled")

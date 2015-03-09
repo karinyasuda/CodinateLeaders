@@ -25,7 +25,9 @@ class ThirdViewController: UIViewController {
     }
     
     
-    
+    @IBAction func goBack(sender: UIButton){
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     //いまstoryboardにあるtableviewの内容はここに書いてあります！
     //ですがこれを入力した時に、 
     //cell.textLabel.text = "\(indexPath.row)"    return cell  のrowのあとにエラーがでてしまって、

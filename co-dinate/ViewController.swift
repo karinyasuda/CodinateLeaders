@@ -9,10 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-//    @IBOutlet var Button1:UIButton!
-//    @IBOutlet var Button2:UIButton!
-//    @IBOutlet var Button3:UIButton!
-
+    @IBOutlet var Button1:UIButton!
+    @IBOutlet var Button2:UIButton!
+    @IBOutlet var Button3:UIButton!
+    
     
    
     override func viewDidLoad() {
@@ -24,17 +24,21 @@ class ViewController: UIViewController {
 ////        btn!.setImage(img, forState: UIControlState.Normal);
 //        btn!.addTarget(self, action: "onClick:", forControlEvents: UIControlEvents.TouchUpInside);
 //        
-//        Button1.layer.cornerRadius = 10
-//        self.view.addSubview(Button1)
-//        Button1.layer.borderWidth = 1
-//        Button2.layer.cornerRadius = 10
-//        self.view.addSubview(Button2)
-//        Button2.layer.borderWidth = 1
-//        Button3.layer.cornerRadius = 10
-//        self.view.addSubview(Button3)
-//        Button3.layer.borderWidth = 1
-//        
-//      
+        Button1.layer.cornerRadius = 10
+        self.view.addSubview(Button1)
+        Button1.layer.borderWidth = 1
+        Button2.layer.cornerRadius = 10
+        self.view.addSubview(Button2)
+        Button2.layer.borderWidth = 1
+        Button3.layer.cornerRadius = 10
+        self.view.addSubview(Button3)
+        Button3.layer.borderWidth = 1
+        
+        
+        
+        
+        
+//
         // Do any additional setup after loading the view, typically from a nib.
     }
 
