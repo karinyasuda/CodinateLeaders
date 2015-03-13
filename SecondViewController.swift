@@ -27,6 +27,7 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(ImageView)
+        //backgroundを透明にする
         self.ImageView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
 //        self.ImageView.backgroundColor = UIColor.ColorWithAlphaComponent(0.5)
 //        self.ImageView.layer.borderWidth = 1
@@ -59,10 +60,14 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         @IBAction func pickBtn(sender: UIButton) {
             //varで変数宣言　letだと定数宣言
             var photoPick = UIImagePickerController()
+            //パーツの管理をどこがするか。
+            //今回はコードを書いている所と同じ所で管理しているから、selfでおk！
             photoPick.delegate = self
             
             photoPick.sourceType = .PhotoLibrary
-            //photoPickのためにpresentViewController
+            //photoPickのためにpresentViewController を用意　selfはどこで使うかって言う問題。使うのはここだからおっけー
+            //selfは省略可能
+            //competition は、画面遷移の時に何をするか。今回は、nil何もしない
             self.presentViewController(photoPick, animated: true, completion: nil)
             
             
