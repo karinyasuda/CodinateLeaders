@@ -30,10 +30,13 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     override func viewDidLoad() {
         super.viewDidLoad()
         let defaults = NSUserDefaults.standardUserDefaults()
+        //for key はパスワードみたいなもので、復元するときに使うらしいです！
         var tmpArray:NSArray! = defaults.arrayForKey("key")
-        if (tmpArray.isEmpty){
-        clothesArray = tmpArray.mutableCopy() as NSMutableArray
-        }
+        
+        //登録したデータを復元するフェーズをぬるぽさんが作ろうとしてたところ！
+//        if (tmpArray.isEmpty){
+//        clothesArray = KtmpArray.mutableCopy() as NSMutableArray
+//        }
         self.view.addSubview(ImageView)
         //backgroundを透明にする
         self.ImageView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
@@ -98,6 +101,8 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         var hogeDic: Dictionary = ["season": seaonsTextfield.text, "kind": groupsTextfield.text, "image":images]
         clothesArray.addObject(hogeDic)
         
+        //UserDefaltsを使ってデータの保存
+        //アプリを終了してもデータを維持する
         NSUserDefaults.standardUserDefaults().setObject(clothesArray, forKey: "key")
         NSUserDefaults.standardUserDefaults().synchronize()
     
