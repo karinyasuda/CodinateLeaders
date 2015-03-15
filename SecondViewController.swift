@@ -18,6 +18,9 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     var ImageView = UIImageView(frame:CGRectMake(60, 150, 200, 200))
     //ボタンを設置
     @IBOutlet var pickBtn:UIButton!
+    @IBOutlet var seaonsTextfield: UITextField!
+    @IBOutlet var groupsTextfield: UITextField!
+    var clothesArray = NSMutableArray()
     
     //imageを取って来て
     var images:UIImage! = UIImage(named:"my_image")
@@ -26,6 +29,11 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var tmpArray:NSArray! = defaults.arrayForKey("key")
+        if (tmpArray.isEmpty){
+        clothesArray = tmpArray.mutableCopy() as NSMutableArray
+        }
         self.view.addSubview(ImageView)
         //backgroundを透明にする
         self.ImageView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
@@ -39,6 +47,8 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
              //↓もしかしたらこの一文いらないかも
         self.view.addSubview(pickBtn)
         pickBtn.layer.borderWidth = 1
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -85,9 +95,26 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         
         var images:UIImage! = ImageView.image
         //hogeDicとして画像とテキストデータをセットにする！
-        var hogeDic: Dictionary = ["name": images, "key2": "test"]
+        var hogeDic: Dictionary = ["season": seaonsTextfield.text, "kind": groupsTextfield.text, "image":images]
+        clothesArray.addObject(hogeDic)
+        
+        NSUserDefaults.standardUserDefaults().setObject(clothesArray, forKey: "key")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    
+    
     }
 //    func imagePickerControllerDidCancel(picker: UIImagePickerController){
+    
+    //
+     // NOTE
+     // Swift nil is not the same as nil In Bbjective-C. In Bbjective-C,nil is a pointer to a nonexistent object.
+     // In Swift ,nil is not a pointer - is is the absence of a value of a certain type....
+     // Swiftのnilは「値がない」という定義なので
+    
+     // nil cannot be used with nonoptional  constant or variable in your code needs to work with the abcence of a value of the appropriate type.
+    
+    
+    
 //        println("canseled")
 //    }
 
