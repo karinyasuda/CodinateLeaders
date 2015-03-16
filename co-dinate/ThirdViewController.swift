@@ -10,10 +10,20 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 //,UITableViewDataSource ,UITableViewDelegate{
-    
+    var clothesArray = NSMutableArray()
+    let defaults = NSUserDefaults.standardUserDefaults()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var tmpArray:NSArray! = defaults.arrayForKey("key")
+        
+        //登録したデータを復元するフェーズをぬるぽさんが作ろうとしてたところ！
+        if (tmpArray != nil){
+            clothesArray = tmpArray.mutableCopy() as NSMutableArray
+            println("load clothesArray %d",clothesArray.count)
+        }
         
 
         // Do any additional setup after loading the view.

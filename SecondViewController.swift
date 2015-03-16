@@ -20,6 +20,7 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     @IBOutlet var pickBtn:UIButton!
     @IBOutlet var seaonsTextfield: UITextField!
     @IBOutlet var groupsTextfield: UITextField!
+    //配列の生成
     var clothesArray = NSMutableArray()
     
     //imageを取って来て
@@ -29,14 +30,17 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //NSUserDefaultsのインスタンスを生成
         let defaults = NSUserDefaults.standardUserDefaults()
         //for key はパスワードみたいなもので、復元するときに使うらしいです！
         var tmpArray:NSArray! = defaults.arrayForKey("key")
         
         //登録したデータを復元するフェーズをぬるぽさんが作ろうとしてたところ！
-//        if (tmpArray.isEmpty){
-//        clothesArray = KtmpArray.mutableCopy() as NSMutableArray
-//        }
+        if (tmpArray != nil){
+        clothesArray = tmpArray.mutableCopy() as NSMutableArray
+            println("load clothesArray %d",clothesArray.count)
+        }
+
         self.view.addSubview(ImageView)
         //backgroundを透明にする
         self.ImageView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
@@ -49,13 +53,14 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         pickBtn.layer.cornerRadius = 10
              //↓もしかしたらこの一文いらないかも
         self.view.addSubview(pickBtn)
-        pickBtn.layer.borderWidth = 1
+        pickBtn.layer.borderWidth = 0
         
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
     
@@ -89,6 +94,21 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         @IBAction func goBack(sender: UIButton){
             self.dismissViewControllerAnimated(true, completion: nil)
     }
+        @IBAction func saveButton(sender: UIButton){
+            var images:UIImage! = ImageView.image
+            //hogeDicとして画像とテキストデータをセットにする！
+            var hogeDic: Dictionary = ["season": seaonsTextfield.text, "kind": groupsTextfield.text, "image":images]
+            clothesArray.addObject(hogeDic)
+            
+            
+            
+            //UserDefaltsを使って、"key"というkeyで配列clothesArrayを保存
+            //アプリを終了してもデータを維持する
+            NSUserDefaults.standardUserDefaults().setObject(clothesArray, forKey: "key")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            
+
+    }
     //imageViewControllerのアクションを詳しく
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]){
         ImageView.image = info[UIImagePickerControllerOriginalImage]as? UIImage
@@ -96,16 +116,6 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
-        var images:UIImage! = ImageView.image
-        //hogeDicとして画像とテキストデータをセットにする！
-        var hogeDic: Dictionary = ["season": seaonsTextfield.text, "kind": groupsTextfield.text, "image":images]
-        clothesArray.addObject(hogeDic)
-        
-        //UserDefaltsを使ってデータの保存
-        //アプリを終了してもデータを維持する
-        NSUserDefaults.standardUserDefaults().setObject(clothesArray, forKey: "key")
-        NSUserDefaults.standardUserDefaults().synchronize()
-    
     
     }
 //    func imagePickerControllerDidCancel(picker: UIImagePickerController){

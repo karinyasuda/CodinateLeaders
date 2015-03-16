@@ -16,13 +16,25 @@ class ForthViewController: UIViewController {
 //    @IBOutlet var buttonsummer:UIButton!
 //    @IBOutlet var buttonautumn:UIButton!
 //    @IBOutlet var buttonwinter:UIButton!
-//    
     
+//
+    var clothesArray = NSMutableArray()
+    let defaults = NSUserDefaults.standardUserDefaults()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        var loadArray:NSArray!
+        
+        var tmpArray:NSArray! = defaults.arrayForKey("key")
+        
+        //登録したデータを復元するフェーズをぬるぽさんが作ろうとしてたところ！
+        if (tmpArray != nil){
+            clothesArray = tmpArray.mutableCopy() as NSMutableArray
+            println("load clothesArray %d",clothesArray.count)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
