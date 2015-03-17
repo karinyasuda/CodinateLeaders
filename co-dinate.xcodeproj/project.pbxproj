@@ -29,6 +29,7 @@
 		9A14BE151AA996BA00C47618 /* pants1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A14BE111AA996BA00C47618 /* pants1.jpg */; };
 		9A14BE171AA9983F00C47618 /* EightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A14BE161AA9983F00C47618 /* EightViewController.swift */; };
 		9A14BE191AA9986C00C47618 /* NinthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A14BE181AA9986C00C47618 /* NinthViewController.swift */; };
+		9A270CF71AB6E0C40005E0BA /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A270CF61AB6E0C40005E0BA /* FifthViewController.swift */; };
 		9A559EB41AA145AD003A38A9 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A559EB31AA145AD003A38A9 /* ForthViewController.swift */; };
 		9AC8CD581A9C8F9200CACBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8CD571A9C8F9200CACBE2 /* AppDelegate.swift */; };
 		9AC8CD5A1A9C8F9200CACBE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8CD591A9C8F9200CACBE2 /* ViewController.swift */; };
@@ -78,6 +79,7 @@
 		9A14BE111AA996BA00C47618 /* pants1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pants1.jpg; sourceTree = "<group>"; };
 		9A14BE161AA9983F00C47618 /* EightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightViewController.swift; sourceTree = "<group>"; };
 		9A14BE181AA9986C00C47618 /* NinthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NinthViewController.swift; sourceTree = "<group>"; };
+		9A270CF61AB6E0C40005E0BA /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		9A559EB31AA145AD003A38A9 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForthViewController.swift; path = ../ForthViewController.swift; sourceTree = "<group>"; };
 		9AC8CD521A9C8F9200CACBE2 /* co-dinate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "co-dinate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC8CD561A9C8F9200CACBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -184,12 +186,13 @@
 				9ADBA5321AA32D71003E8B70 /* addnew.png */,
 				9ADBA5231AA32897003E8B70 /* imgcloset.png */,
 				9ADBA5251AA32999003E8B70 /* imgcloset2.jpeg */,
-				9AC8CD5B1A9C8F9200CACBE2 /* Main.storyboard */,
 				9AC8CD571A9C8F9200CACBE2 /* AppDelegate.swift */,
 				9AC8CD591A9C8F9200CACBE2 /* ViewController.swift */,
 				9AC8CD7F1AA02AC100CACBE2 /* SecondViewController.swift */,
 				9A14BDA91AA8310800C47618 /* ThirdViewController.swift */,
 				9A559EB31AA145AD003A38A9 /* ForthViewController.swift */,
+				9A270CF61AB6E0C40005E0BA /* FifthViewController.swift */,
+				9AC8CD5B1A9C8F9200CACBE2 /* Main.storyboard */,
 				9A14BDAD1AA8A45400C47618 /* SixthViewController.swift */,
 				9A14BDAF1AA8C73C00C47618 /* SevenViewController.swift */,
 				9A14BE161AA9983F00C47618 /* EightViewController.swift */,
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A270CF71AB6E0C40005E0BA /* FifthViewController.swift in Sources */,
 				9AC8CD801AA02AC100CACBE2 /* SecondViewController.swift in Sources */,
 				9A14BDAE1AA8A45400C47618 /* SixthViewController.swift in Sources */,
 				9AC8CD5A1A9C8F9200CACBE2 /* ViewController.swift in Sources */,

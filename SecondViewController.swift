@@ -18,6 +18,8 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     var ImageView = UIImageView(frame:CGRectMake(60, 150, 200, 200))
     //ボタンを設置
     @IBOutlet var pickBtn:UIButton!
+    @IBOutlet var saveBtn:UIButton!
+    @IBOutlet var goBack:UIButton!
     @IBOutlet var seaonsTextfield: UITextField!
     @IBOutlet var groupsTextfield: UITextField!
     //配列の生成
@@ -54,6 +56,16 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
              //↓もしかしたらこの一文いらないかも
         self.view.addSubview(pickBtn)
         pickBtn.layer.borderWidth = 0
+        
+        saveBtn.layer.cornerRadius = 10
+        //↓もしかしたらこの一文いらないかも
+        self.view.addSubview(saveBtn)
+        saveBtn.layer.borderWidth = 0
+        
+        goBack.layer.cornerRadius = 30
+        //↓もしかしたらこの一文いらないかも
+        self.view.addSubview(goBack)
+        goBack.layer.borderWidth = 0
         
         
     }

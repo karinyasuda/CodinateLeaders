@@ -11,6 +11,7 @@ import UIKit
 class ThirdViewController: UIViewController {
 //,UITableViewDataSource ,UITableViewDelegate{
     var clothesArray = NSMutableArray()
+    
     let defaults = NSUserDefaults.standardUserDefaults()
 
 
@@ -23,9 +24,11 @@ class ThirdViewController: UIViewController {
         if (tmpArray != nil){
             clothesArray = tmpArray.mutableCopy() as NSMutableArray
             println("load clothesArray %d",clothesArray.count)
+            
         }
         
-
+        
+//        var date : NSData! = defaults.arrayForKey("key")
         // Do any additional setup after loading the view.
     }
 
