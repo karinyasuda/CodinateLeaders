@@ -53,7 +53,7 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         //ボタンの形を変える
         //角丸に。◯にしたい時には、ボタンのサイズとcornerRadiusの値の二倍を同じにするといい
         pickBtn.layer.cornerRadius = 10
-             //↓もしかしたらこの一文いらないかも
+             //↓もしかしたらこの一文いらないかも？？
         self.view.addSubview(pickBtn)
         pickBtn.layer.borderWidth = 0
         
