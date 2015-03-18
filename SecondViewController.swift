@@ -121,6 +121,8 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
             
 
     }
+    
+    // MARK:
     //imageViewControllerのアクションを詳しく
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]){
         ImageView.image = info[UIImagePickerControllerOriginalImage]as? UIImage

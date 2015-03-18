@@ -8,15 +8,15 @@
 
 import UIKit
 
-class FifthViewController: UIViewController {
+class FifthViewController: UITableViewController{
     var clothesArray = NSMutableArray()
     let defaults = NSUserDefaults.standardUserDefaults()
-
+    
+    @IBOutlet var swiftTable: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         var tmpArray:NSArray! = defaults.arrayForKey("key")
         
         //登録したデータを復元するフェーズをぬるぽさんが作ろうとしてたところ！
@@ -24,8 +24,24 @@ class FifthViewController: UIViewController {
             clothesArray = tmpArray.mutableCopy() as NSMutableArray
             println("load clothesArray %d",clothesArray.count)
         }
+        
+        swiftTable.delegate = self
+        swiftTable.dataSource = self;
 
     }
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return clothesArray.count
+    }
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+        
+        cell.textLabel?.text = "Hello Swift"
+        return cell
+    }
+    @IBAction func goBack(sender: UIButton){
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
