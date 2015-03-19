@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,UINavigationControllerDelegate{
+class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,UINavigationControllerDelegate,UITextFieldDelegate{
 
     //写真をカメラロールから取ってくるだけのimageviwewです
     //最初は、ここからデータ保存できたらいいなと思っていたのですが、今はいらないかも知れません。
@@ -24,9 +24,12 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     @IBOutlet var groupsTextfield: UITextField!
     //配列の生成
     var clothesArray = NSMutableArray()
-    
+    var txtActiveField = UITextField()
     //imageを取って来て
     var images:UIImage! = UIImage(named:"my_image")
+    
+    
+   
     
     
     
@@ -40,7 +43,7 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         //登録したデータを復元するフェーズをぬるぽさんが作ろうとしてたところ！
         if (tmpArray != nil){
         clothesArray = tmpArray.mutableCopy() as NSMutableArray
-            println("load clothesArray %d",clothesArray.count)
+            println("table clothesArray %d",clothesArray.count)
         }
 
         self.view.addSubview(ImageView)
@@ -75,7 +78,10 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func tapScreen(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+//
 
     /*
     // MARK: - Navigation
@@ -110,7 +116,11 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
             var images:UIImage! = ImageView.image
             //hogeDicとして画像とテキストデータをセットにする！
             var hogeDic: Dictionary = ["season": seaonsTextfield.text, "kind": groupsTextfield.text, "image":images]
-            clothesArray.addObject(hogeDic)
+            var tmpdata: NSData = NSKeyedArchiver.archivedDataWithRootObject(hogeDic)
+            clothesArray.addObject(tmpdata)
+            self.dismissViewControllerAnimated(true, completion: nil)
+
+            
             
             
             

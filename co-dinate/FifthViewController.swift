@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FifthViewController: UITableViewController{
+class FifthViewController: UIViewController{
     var clothesArray = NSMutableArray()
     let defaults = NSUserDefaults.standardUserDefaults()
     
@@ -18,24 +18,25 @@ class FifthViewController: UITableViewController{
         super.viewDidLoad()
 
         var tmpArray:NSArray! = defaults.arrayForKey("key")
-        
+
         //登録したデータを復元するフェーズをぬるぽさんが作ろうとしてたところ！
         if (tmpArray != nil){
             clothesArray = tmpArray.mutableCopy() as NSMutableArray
-            println("load clothesArray %d",clothesArray.count)
+            println("table clothesArray %d",clothesArray.count)
+        }else{
+            println("clothesArray null")
         }
         
-        swiftTable.delegate = self
-        swiftTable.dataSource = self;
 
     }
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return clothesArray.count
     }
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
-        
-        cell.textLabel?.text = "Hello Swift"
+        let dictionary:NSDictionary = NSKeyedUnarchiver.unarchiveObjectWithData(clothesArray[indexPath.row] as NSData)! as NSDictionary
+        cell.textLabel?.text = dictionary["season"] as NSString
+// cell.textLabel?.text = "Hello Swift"
         return cell
     }
     @IBAction func goBack(sender: UIButton){
