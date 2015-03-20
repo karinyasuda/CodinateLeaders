@@ -22,6 +22,7 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     @IBOutlet var goBack:UIButton!
     @IBOutlet var seaonsTextfield: UITextField!
     @IBOutlet var groupsTextfield: UITextField!
+    @IBOutlet weak var BackGround: UIScrollView!
     //配列の生成
     var clothesArray = NSMutableArray()
     var txtActiveField = UITextField()
@@ -45,7 +46,9 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         clothesArray = tmpArray.mutableCopy() as NSMutableArray
             println("table clothesArray %d",clothesArray.count)
         }
-
+        seaonsTextfield?.delegate = self
+        groupsTextfield?.delegate = self
+        
         self.view.addSubview(ImageView)
         //backgroundを透明にする
         self.ImageView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
@@ -69,17 +72,68 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
         //↓もしかしたらこの一文いらないかも
         self.view.addSubview(goBack)
         goBack.layer.borderWidth = 0
-        
+    
+    //MARK
         
     }
+    func textFieldShouldBeginEditing(textField: UITextField!) -> Bool {
+        txtActiveField = textField
+        return true
+    }
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    func handleKeyboardWillShowNotification(notification: NSNotification) {
+        
+        let userInfo = notification.userInfo!
+        let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue()
+        let myBoundSize: CGSize = UIScreen.mainScreen().bounds.size
+        
+        let txtLimit = txtActiveField.frame.origin.y + txtActiveField.frame.height + 8.0
+        let kbdLimit = myBoundSize.height - keyboardScreenEndFrame.size.height
+        
+        println("テキストフィールドの下辺：(txtLimit)")
+        println("キーボードの上辺：(kbdLimit)")
+        
+        if txtLimit >= kbdLimit {
+            BackGround.contentOffset.y = txtLimit - kbdLimit
+        }
+    }
+    
+    func handleKeyboardWillHideNotification(notification: NSNotification) {
+        BackGround.contentOffset.y = 0
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserver(self, selector: "handleKeyboardWillShowNotification:", name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.addObserver(self, selector: "handleKeyboardWillHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
+    }
 
+
+
+//    func textFieldShouldReturn(textField: UITextField!) -> Bool{
+//        
+//        // キーボードを閉じる
+//        textField.resignFirstResponder()
+//        
+//        return true
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
         // Dispose of any resources that can be recreated.
-    }
-    @IBAction func tapScreen(sender: UITapGestureRecognizer) {
-        self.view.endEditing(true)
     }
 //
 
@@ -120,15 +174,11 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
             clothesArray.addObject(tmpdata)
             self.dismissViewControllerAnimated(true, completion: nil)
 
-            
-            
-            
-            
             //UserDefaltsを使って、"key"というkeyで配列clothesArrayを保存
             //アプリを終了してもデータを維持する
             NSUserDefaults.standardUserDefaults().setObject(clothesArray, forKey: "key")
             NSUserDefaults.standardUserDefaults().synchronize()
-            
+            self.dismissViewControllerAnimated(true, completion: nil)
 
     }
     
@@ -136,11 +186,7 @@ class SecondViewController: UIViewController ,UIImagePickerControllerDelegate ,U
     //imageViewControllerのアクションを詳しく
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]){
         ImageView.image = info[UIImagePickerControllerOriginalImage]as? UIImage
-        
-        
         self.dismissViewControllerAnimated(true, completion: nil)
-        
-    
     }
 //    func imagePickerControllerDidCancel(picker: UIImagePickerController){
     
