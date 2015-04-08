@@ -13,6 +13,7 @@ class FifthViewController: UIViewController{
     let defaults = NSUserDefaults.standardUserDefaults()
     
     @IBOutlet var swiftTable: UITableView!
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +33,15 @@ class FifthViewController: UIViewController{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return clothesArray.count
     }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         let dictionary:NSDictionary = NSKeyedUnarchiver.unarchiveObjectWithData(clothesArray[indexPath.row] as NSData)! as NSDictionary
         cell.textLabel?.text = dictionary["kind"] as NSString
+        
+//        var image = UIImage(named: images[indexPath.row])
+//        cell.imageView.image = image
 // cell.textLabel?.text = "Hello Swift"
         return cell
     }

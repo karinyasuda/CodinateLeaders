@@ -27,6 +27,7 @@ class ForthViewController: UIViewController {
         // Do any additional setup after loading the view.
         var loadArray:NSArray!
         
+        
         var tmpArray:NSArray! = defaults.arrayForKey("key")
         
         //登録したデータを復元するフェーズをぬるぽさんが作ろうとしてたところ！
